@@ -18,6 +18,9 @@ body{
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7); /* Optional: Add shadow for better visibility */
     border-radius: 10px; /* Optional: Add rounded corners */
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-2-pages{
@@ -26,6 +29,12 @@ body{
 }
 
 .container h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container h2{
     display: flex;
     justify-content: center;
 }
@@ -56,4 +65,50 @@ h3, p{
 
 .exercises-and-reps{
     display: flex;
+    cursor: pointer;
+}
+
+
+.wallsit-flex{
+    padding:  0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columns of equal width */
+    grid-template-rows: repeat(4, 100px); /* 4 rows with a height of 100px */
+    gap: 40px; /* Space between the grid items */
+    padding: 20px; /* Space around the grid container */
+}
+
+.grid-item {
+    background-color: lightgray;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    width: 75%; /* Full width */
+    padding: 12px 16px; /* Add padding for better usability */
+    font-size: 16px; /* Make the text easier to read */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    background-color: #f9f9f9; /* Light background color */
+    transition: all 0.3s ease; /* Smooth transition for hover and focus */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    background-color: #fff; /* Change background on focus */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Stronger shadow on focus */
+}
+
+input:hover {
+    border-color: #888; /* Slightly darker border on hover */
 }
